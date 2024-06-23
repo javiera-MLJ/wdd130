@@ -1,5 +1,5 @@
 nav {
-    background-color: steelblue;
+    background-color: rgb(90 170 161);
     padding: 10px;
 }
 nav a {
@@ -7,16 +7,48 @@ nav a {
     display: block;
     padding: 20px;
 }
-h1 {
-    color: steelblue;
+
+h1 { 
+    color: rgb(73 35 88)
 }
-img {
+
+main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid rgb(90 170 161);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
-p {
-    padding: 10px;
+
+p { 
+    padding: 0;
+} 
+
+main { 
+    max-width: 840px;
+}
+
+aside h2 {
+    color: rgb(73 35 88);
+}
+
+aside {
+    width: auto;
+    border: 15px rgb(0 0 0);
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(90 170 161);
+    color: rgb(0 0 0);
+    text-align: center;
+}
+aside img {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 0 30px gray;
+}
+
+footer {
+    margin-top: 1px;
+    border-top: 50px rgb(107 133 130);
+    text-align: center;
 }
