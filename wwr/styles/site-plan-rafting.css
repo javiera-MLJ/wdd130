@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #50d8d87e;
+    --secondary-color: #52A9BE;
+    --accent1-color: #DB7100;
+    --accent2-color: #4A6B91;
+
+    --heading-font: "Barlow", Sans-Serif;
+    --default-font: "Noto Sans", Sans-Serif;
+
+    --nav-background-color: #50d8d87e;
+    --nav-link-color: #4A6B91;
+    --nav-hover-link-color: #FFFFFF;
+    --nav-hover-background-color: #4A6B91;
+
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+
+header {
+    padding: 4em;
+    background-color: #50d8d87e;
+}
+
+p {
+    padding: 1em;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
