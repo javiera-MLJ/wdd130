@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;1,300&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 
 body {
-    font-family: var(--paragraph-font);
+    font-family: var(--default-font);
     max-width: 960px;
     padding: 20px;
 }
@@ -14,7 +14,7 @@ body {
     --accent1-color: #DB7100;
     --accent2-color: #4A6B91;
 
-    --heading-font: "Barlow", Sans-Serif;
+    --heading-font: "Merienda", Handwriting;
     --default-font: "Noto Sans", Sans-Serif;
 
     --nav-background-color: #50d8d87e;
