@@ -39,10 +39,10 @@ main {
 }
 
 aside h2 {
-    color: rgb(168, 118, 118);
+    color: rgb(255, 255, 255);
     position: absolute;
-    top: 2.5em;
-    left: 2em;
+    top: 1em;
+    left: 8.5em;
 }
 
 aside {
