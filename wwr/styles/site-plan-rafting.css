@@ -21,10 +21,6 @@ body {
     --nav-link-color: #4A6B91;
     --nav-hover-link-color: #FFFFFF;
     --nav-hover-background-color: #4A6B91;
-
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
 }
 
 h1,h2,h3,h4,h5,h6 {
