@@ -76,7 +76,7 @@ header, footer, .grid {
 
 footer {
     margin-top: 1px;
-    grid-column:1/4
+    text-align: center;
 }
 
 main {
