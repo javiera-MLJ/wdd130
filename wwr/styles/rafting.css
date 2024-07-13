@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+:root {
+    --primary-color: rgba(80, 216, 216, 0.494);
+    --secondary-color: rgb(81, 168, 189);
+    --accent1-color: rgba(219, 113, 0, 0.675);
+    --accent2-color: rgb(74, 107, 145);
+
+    --heading-font: "Merienda", Handwriting;
+    --paragraph-font: "Noto Sans", Sans-Serif;
+
+    --nav-background-color: #52A9BE;
+    --nav-link-color: #4A6B91;
+    --nav-hover-link-color: #ffffffc9;
+    --nav-hover-background-color: #4A6B91;
+}
+
+* {
+    margin: 1.5em;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    padding: 2rem;
+}
+
+h1 {
+    position: absolute;
+    font-family: var(--heading-font);
+    color: var(--nav-hover-link-color);
+    top: 80%;
+    width: 75%; 
+    z-index: 50; 
+    background-color: rgb(74, 107, 145,0.5); 
+    padding: 1em; 
+    text-align: center; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+p{
+    padding: 2em;
+    font-family: var(--paragraph-font);
+}
+
+nav a {
+    color: var(--nav-hover-background-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.hero img {
+    position: relative; 
+    max-width: 65em; 
+    margin: 0 auto;
+}
+section img {
+    display: block;
+    width: 70%;
+    height: auto;
+}
+
+article {
+    position: absolute;
+    top: 120%; 
+    width: 80%;
+    height: 40%;
+    z-index: 50%; 
+    background-color: rgb(74, 107, 145,0.5); 
+    padding: 2em; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    color: var(--nav-hover-link-color);
+    overflow: hidden; 
+}
+
+article img {
+    float: right;  
+    margin-left: 20em; 
+    margin-bottom: 1em; 
+    display: block;
+    max-width: 100%;
+}
+
+a img {
+    width: 3rem;
+}
