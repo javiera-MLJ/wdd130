@@ -32,7 +32,7 @@ h1 {
     position: absolute;
     font-family: var(--heading-font);
     color: var(--nav-hover-link-color);
-    top: 80%;
+    top: 70%;
     width: 75%; 
     z-index: 50; 
     background-color: rgb(74, 107, 145,0.5); 
@@ -58,7 +58,7 @@ nav a {
 
 .hero img {
     position: relative; 
-    max-width: 65em; 
+    max-width: 75em; 
     margin: 0 auto;
 }
 section img {
@@ -69,10 +69,10 @@ section img {
 
 article {
     position: absolute;
-    top: 120%; 
+    top: 90%; 
     width: 80%;
     height: 40%;
-    z-index: 50%; 
+    z-index: 50em; 
     background-color: rgb(74, 107, 145,0.5); 
     padding: 2em; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
