@@ -34,7 +34,7 @@ h1 {
     color: var(--nav-hover-link-color);
     top: 70%;
     width: 75%; 
-    z-index: 50; 
+    z-index: 50em; 
     background-color: rgb(74, 107, 145,0.5); 
     padding: 1em; 
     text-align: center; 
