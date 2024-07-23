@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>        
+        <link rel="stylesheet" href="styles/quiz.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javiera Millarai Lorca Jimenez | QUIZ </title>
+        <meta name="author" content="Javiera Lorca">
+    </head>
+<body>
+    <header>
+        <h1>Basic HTML and CSS quiz</h1>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Question 1:</legend>
+            <label for="q1">What is the correct way to make a comment in HTML?</label><br>
+            <input type="text" id="q1" name="q1"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 2:</legend>
+            <label for="q2">what does a CSS mean and what is it used for?</label><br>
+            <textarea id="q2" name="q2" rows="5" cols="60">
+            </textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 3:</legend>
+            <label for="css">Which CSS unit represents one fraction of the available space in the grid container to flexibly size grid rows and columns?</label>
+            <select id="q3" name="q3">
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="em">em</option>
+                <option value="fr">fr </option>
+                <option value="vh">vh</option>
+                <option value="px">px</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 4:</legend>
+            <label for="q2">The CSS box model refers to the conceptual, rectangular area that exists on HTML elements. The box model has four, basic components listed below.</label><br>
+            <img src="images/boxmodellabeled.png" alt="Rectangular Area on HTML">
+                <label for="quantity">What number corresponds to the border?</label>
+                <input type="number" id="q4" name="q4" min="1" max="4" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 5:</legend>
+            <label for="q2">Which of the following is the correct syntax to create a CSS Rule for the universal selector?</label><br>
+            <input type="radio" id="body" name="body" value="HTML">
+            <label for="body">body { ... } </label><br>
+            <input type="radio" id="css" name="comment" value="comment">
+            <label for="css"># { ... } </label><br>
+            <input type="radio" id="universal" name="universal">
+            <label for="javascript">* { ... } </label>
+        </fieldset>
+
+
+            <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
