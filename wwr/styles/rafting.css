@@ -12,7 +12,7 @@
     --heading-font: "Merienda", Handwriting;
     --paragraph-font: "Noto Sans", Sans-Serif;
     --aleatory-font: "mukta", sans-serif;
-    --nav-background-color: rgb(74, 107, 145,0.5);
+    --nav-background-color: rgb(74, 107, 145,0.3);
     --nav-link-color: rgba(185, 218, 235, 0.89);
     --nav-hover-link-color: #ffffffc9;
     --nav-hover-background-color: #859bb5;
@@ -190,43 +190,43 @@ footer {
 
 .form {
     width: 100%;
-    height: 100vh;
-    overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+    height: auto;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: center;
 }
 
-#fullscreen-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centrar exactamente */
-    min-width: 100%; /* Asegurar que la imagen cubra al menos el 100% del ancho */
-    min-height: 100%; /* Asegurar que la imagen cubra al menos el 100% de la altura */
-    object-fit: cover; /* Ajustar la imagen para cubrir el área especificada */
-    z-index: -1; /* Colocar la imagen detrás del contenido del formulario */
+#fullscreen-image {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 form {
-    height: 520px;
-    width: 400px;
-    background-color: rgba(255, 255, 255, 0.13);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    background-color: var(--nav-background-color);
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
     padding: 50px 35px;
-    z-index: 1; /* Asegurar que el formulario esté por encima de la imagen */
-}
+    z-index: 1;
 
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+
+    margin-block: 3rem;
+}
 form *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
+    box-sizing: border-box; 
+
 }
 form h3{
     font-size: 32px;
@@ -255,14 +255,122 @@ input{
 ::placeholder{
     color: #e5e5e5;
 }
-button{
-    margin-top: 50px;
+button {
     width: 100%;
-    background-color: #ffffff;
-    color: #080710;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 600;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: #fff; 
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+    
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+div {
+    margin: 20px;
+    font-weight: 600;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    height: 20px; /* Ajusta el tamaño según tus necesidades */
+    margin-right: 10px; /* Espacio entre el checkbox/radio y el texto */
+}
+
+div.type, div.subscribe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px; 
+}
+
+.workers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px; 
+    background-color: var(--nav-background-color);
+    padding: 2.5em;
+    box-sizing: border-box;
+}
+
+.workers-item {
+    text-align: center;
+}
+
+.workers img {
+    width: 320px; 
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: var(--nav-hover-background-color);
+}
+
+.workers figcaption {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: black; 
+    font-family: var(--aleatory-font)
+}
+
+div.company-info {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 20px;
+}
+
+iframe{
+    border-radius: 100px;
+}
+
+section.info {
+    border-radius: 100px;
+    background-color: var(--nav-hover-background-color);
+    text-align: center;
+    padding: 2em;
+}
+
+section.info h3 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    font-size: 40px;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    margin: 0em;
+}
+
+section.info p, section.info a {
+    font-size: 25px;
+    margin: 1px;
+    padding: 2px;
+    text-decoration: none;
+    color: var(--nav-hover-link-color);
 }

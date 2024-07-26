@@ -20,56 +20,66 @@
         </header>
         <main>
             <section>
-                <h2 >History</h2>
-                <div class="his">
-                    <p>In a mountainous valley lies the Tempest River, renowned for its swift currents and natural beauty. A group of friends passionate about sports and nature decides to explore it. Guided by Maria, an expert in water sports, they prepare their equipment and embark on the river. Throughout the journey, they face thrilling rapids, discover breathtaking landscapes, and enjoy the wildlife. The adventure teaches them about the river's history and cultural significance. Upon finishing, they reach a village where they are warmly welcomed and share stories with the locals. The excursion was not only an exhilarating experience but also a journey of connection with nature and the cultural heritage of the place.</p>
-                    <img src="images/history.jpg" alt="maria and her team in the tempest river" width="300">
+                <h2>Our Team</h2>
+                <div class="workers">
+                    <figure class="workers-item">
+                        <img src="images/worker-1.jpg" alt="worker 1">
+                        <figcaption>Mathew Jones - Coordinator</figcaption>
+                    </figure>
+                    <figure class="workers-item">
+                        <img src="images/worker-2.jpg" alt="People In Rafting">
+                        <figcaption>robert Garcia - instructor</figcaption>
+                    </figure>
+                    <figure class="workers-item">
+                        <img src="images/worker-3.jpg" alt="Place">
+                        <figcaption>Cynthia Evans - Manager</figcaption>
+                    </figure>
                 </div>
             </section>
             <section>
-                <h2>Adventure Awaits You!</h2>
-                <div class="images">
-                    <figure class="image-item">
-                        <img src="images/river-narrow.jpg" alt="mountains">
-                        <figcaption>Tempest River</figcaption>
-                    </figure>
-                    <figure class="image-item">
-                        <img src="images/people-in-rafting-V2.jpg" alt="People In Rafting">
-                        <figcaption>titikaka river</figcaption>
-                    </figure>
-                    <figure class="image-item">
-                        <img src="images/place.jpg" alt="Place">
-                        <figcaption>river of the union all saints</figcaption>
-                    </figure>
+                <h2 >Company Info</h2>
+                <div class="company-info">
+                    <section class="info">
+                        <h3>phone Numbers</h3><br>
+                        <p>(+34) 665307953 - (+34) 665307954</p>
+                        <h3>E-mail</h3><br>
+                        <a href="whrite-rafting@gmail.com">whrite-rafting@gmail.com</a>
+                        <h3>Address</h3><br>
+                        <p>Piedras Negras, Puerto Octay, Chile.</p>
+                    </section>                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2536.3696151326003!2d-72.46490551884267!3d-40.887918350077854!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1721978228712!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
+
             <div class="form">
                 <img src="images/rafting-place.jpg" alt="Main Image" id="fullscreen-image">
                 <form>
-                    <h3>Login Here</h3>
+                    <h3>Contact Us</h3>
             
-                    <label for="username">Username</label>
-                    <input type="text" placeholder="Username" id="username">
-
-                    <label for="email">Email</label>
-                    <input type="text" placeholder="Email or Phone" id="Email">
-
-                    <label for="Motive">Motive</label>
-                    <input type="radio" placeholder="General Inquiry" id="General Inquiry">
-                    <label for="Option">General Inquiry</label>
-                    <input type="radio" placeholder=">Reservation Question" id="Reservation Question">
-                    <label for="Option">Reservation Question</label>
-                    <input type="radio" placeholder="Website Suggestion" id="Website Suggestion">
-                    <label for="Option">Website Suggestion</label>
-
-
-                    <label for="Message">Message:</label><br>
-                    <textarea id="Message" name="Message" rows="5" cols="60">
-                    </textarea>
-            
-                    <label></label>
-                        <input type="checkbox" name="suscribe" value="suscribe">
-                        <label for="Option">Please suscribe me to the monthly newsletter</label>
+                    <div class="name">
+                        <label for="name">What is your Name?</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="email">
+                        <label for="email">What is your email?</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="type">
+                        <input type="radio" id="generalinquiry" name="prupose" value="generalinquiry" checked>
+                        <label for="generalinquiry">General Inquiry</label><br>
+                        <input type="radio" id="reservationquestion" name="prupose" value="reservationquestion">
+                        <label for="reservationquestion">Reservation Question</label><br>
+                        <input type="radio" id="websitesuggestion" name="prupose" value="websitesuggestion">
+                        <label for="websitesuggestion">Website Suggestion</label>
+                    </div>
+                    <div class="comment">
+                        <label for="comment">Please type your comment here:</label>
+                        <textarea id="comment" name="comment" rows="3" cols="46"></textarea>
+                    </div>
+                    <div class="subscribe">
+                        <input type="checkbox" id="submission" name="submission">
+                        <label for="submission">Please subscribe me to the monthly newsletter</label>
+                    </div>
 
                     <button>Log In</button>
                 </form>
