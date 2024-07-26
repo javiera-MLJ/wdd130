@@ -64,7 +64,7 @@ header img {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-h1 {
+div.hero h1 {
     position: absolute;
     font-family: var(--heading-font);
     color: var(--nav-hover-link-color);
@@ -375,6 +375,19 @@ section.info p, section.info a {
     color: var(--nav-hover-link-color);
 }
 
+h1 {
+    font-family: var(--heading-font);
+    color:  rgb(74, 107, 145,0.7);
+    top: 200px;
+    width: 100%; 
+    z-index: 50; 
+    background-color: var(--nav-background-color); 
+    padding: 0.5em; 
+    text-align: center; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    font-size: 70px; 
+    }
+    
 /*
                                 TRIPS
 */
